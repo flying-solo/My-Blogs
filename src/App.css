@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+.app{
+  max-width: 54rem;
+  margin: 2vh auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* navbar */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.39);
+  padding: 1.5vh 2vw;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar h1{
+  color: rgb(63, 63, 63);
+  font-size: 4vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  background-color: rgb(83, 186, 255);
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(0, 66, 110);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+/* all blogs */
+
+.content{
+  max-width: fit-content;
+  margin: 5rem auto;
+}
+.blog{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: 0 0 15px 0 rgba(197, 197, 197, 0.555);
+  padding: 1rem 2.3rem;
+  border-radius: 1.2rem;
+  margin-top: 2rem;
+}
+
+.blog h5{
+  margin-top: 0.5rem;
+  font-weight: 400;
+}
+.blog h2{
+  color: cornflowerblue;
+}
+.blogButton{
+  font-size: 0.4rem;
+}
+
+
+/* create blog */
+
+.create{
+  max-width: 20rem;
+  margin: 2.5rem auto;
+}
+.create h2{
+  color: rgb(98, 161, 255);
+}
+label{
+  text-align: left;
+  display: block;
+  color: rgb(0, 69, 133);
+}
+
+.create input, .create textarea{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  margin: 0.4rem 0;
+}
+
+
+/* blog details */
+.details h1{
+  color: rgb(98, 161, 255);
+  margin-top: 3rem;
+}
+
+.details h5{
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.details p{
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.details button{
+  margin: 2rem 0;
+  float: right;
+}
+
+.deleted{
+  margin-top: 3rem;
+  color: brown;
+  text-align: center;
+
+}
+
+.loadingData{
+  margin-top: 4rem;
+  text-align: center;
+  color: rgb(243, 186, 0);
+  font-weight: 500;
+  font-size: 2rem;
 }
